@@ -44,8 +44,7 @@ Trước khi cài đặt, hãy đảm bảo máy của bạn đã cài đặt:
 ## 🚀 Hướng dẫn cài đặt & Chạy dự án
 
 ### 1. Cấu hình Database (MongoDB)
-
-Tải dữ liệu trên [KAGGLE](https://www.kaggle.com/datasets/yasserh/amazon-product-reviews-dataset?resource=download)
+#### Tải dữ liệu trên [KAGGLE](https://www.kaggle.com/datasets/yasserh/amazon-product-reviews-dataset?resource=download)
 Dữ liệu mẫu nằm trong file `7817_1.csv`.
 
 * **Database Name:** `amazon_db`
