@@ -88,18 +88,5 @@ npm start     # Chạy ứng dụng React
 
 ---
 
-## 📸 Demo (Screenshots)
-
-*(Bạn nên thay thế dòng này bằng ảnh chụp màn hình thực tế của Dashboard để dự án trông ấn tượng hơn)*
-
-* *Dashboard tổng quan*
-* *Biểu đồ phân tích*
-
-## 🤝 Đóng góp
-
-Mọi đóng góp đều được hoan nghênh. Vui lòng mở Pull Request hoặc Issue để thảo luận về các thay đổi.
-
----
-
 **Happy Coding!** 🚀
 
