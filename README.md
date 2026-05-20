@@ -1,6 +1,6 @@
 # 📊 Amazon Review Analysis Dashboard
 
-> Hệ thống phân tích dữ liệu Big Data từ Amazon, cung cấp cái nhìn sâu sắc về đánh giá sản phẩm thông qua giao diện trực quan.
+> Big Data analytics system for Amazon, providing insightful views on product reviews through an intuitive dashboard.
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)
@@ -9,31 +9,30 @@
 
 ---
 
-## 📖 Giới thiệu
-Dự án này là một giải pháp Fullstack nhằm xử lý và hiển thị dữ liệu đánh giá sản phẩm từ Amazon. Hệ thống sử dụng **Spring Boot** để xây dựng API xử lý dữ liệu lớn và **ReactJS** để hiển thị biểu đồ phân tích (Dashboard).
+## 📖 Introduction
+This project is a fullstack solution for processing and visualizing product review data from Amazon. The system uses **Spring Boot** to build the API and handles Big Data, while the **ReactJS** front end visualizes the data in a user-friendly manner.
 
-## 🛠 Công nghệ sử dụng
+## 🛠 Technologies Used
 
-| Thành phần | Công nghệ |
-| :--- | :--- |
-| **Backend** | Java Spring Boot, Spring Data MongoDB |
-| **Frontend** | ReactJS, Axios, ChartJS |
-| **Database** | MongoDB |
-| **Build Tool** | Maven, NPM |
+| Component     | Technologies                        |
+| :---          | :---                                |
+| **Backend**   | Java Spring Boot, Spring Data MongoDB |
+| **Frontend**  | ReactJS, Axios, ChartJS             |
+| **Database**  | MongoDB                             |
+| **Build Tool**| Maven, NPM                          |
 
-## 📂 Cấu trúc dự án
+## 📂 Project Structure
 
 ```bash
 amazon-review-analysis/
-├── backend/         # Mã nguồn Server (Spring Boot - Port 8080)
-├── frontend/        # Mã nguồn Client (ReactJS - Port 3000)
-└── README.md        # Tài liệu hướng dẫn
-
+├── backend/         # Server Source Code (Spring Boot - Port 8080)
+├── frontend/        # Client Source Code (ReactJS - Port 3000)
+└── README.md        # Documentation
 ```
 
-## ⚙️ Yêu cầu tiên quyết
+## ⚙️ Prerequisites
 
-Trước khi cài đặt, hãy đảm bảo máy của bạn đã cài đặt:
+Before installing, make sure your machine has:
 
 * [Java JDK 17+](https://www.oracle.com/java/technologies/downloads/)
 * [Node.js & NPM](https://nodejs.org/)
@@ -41,52 +40,48 @@ Trước khi cài đặt, hãy đảm bảo máy của bạn đã cài đặt:
 
 ---
 
-## 🚀 Hướng dẫn cài đặt & Chạy dự án
+## 🚀 Installation & Run Guide
 
-### 1. Cấu hình Database (MongoDB)
-#### Tải dữ liệu trên [KAGGLE](https://www.kaggle.com/datasets/yasserh/amazon-product-reviews-dataset?resource=download)
-Dữ liệu mẫu nằm trong file `7817_1.csv`.
+### 1. Configure Database (MongoDB)
+#### Download data from [KAGGLE](https://www.kaggle.com/datasets/yasserh/amazon-product-reviews-dataset?resource=download)
+The sample data is in file `7817_1.csv`.
 
 * **Database Name:** `amazon_db`
 * **Collection Name:** `reviews`
 
-Bạn có thể import bằng MongoDB Compass hoặc sử dụng lệnh sau:
+You can import via MongoDB Compass or use the following command:
 
 ```bash
 mongoimport --db amazon_db --collection reviews --type csv --headerline --file 7817_1.csv
-
 ```
 
-### 2. Khởi chạy Backend (Server)
+### 2. Run Backend (Server)
 
-Truy cập vào thư mục backend và chạy ứng dụng Spring Boot.
+Navigate to the backend folder and run the Spring Boot application.
 
-* **Cách 1:** Mở thư mục `/backend` bằng **IntelliJ IDEA** và nhấn Run.
-* **Cách 2:** Chạy bằng dòng lệnh:
+* **Option 1:** Open the `/backend` folder in **IntelliJ IDEA** and click Run.
+* **Option 2:** Run via terminal:
 
 ```bash
 cd backend
 ./mvnw spring-boot:run
-
 ```
 
-> **Lưu ý:** Đảm bảo cấu hình kết nối MongoDB trong `application.properties` đã chính xác.
-> Server sẽ chạy tại: `http://localhost:8080`
+> **Note:** Ensure the MongoDB connection configuration in `application.properties` is correct.
+> The server will run at: `http://localhost:8080`
 
-### 3. Khởi chạy Frontend (Client)
+### 3. Run Frontend (Client)
 
-Mở một terminal mới và thực hiện các lệnh sau:
+Open a new terminal and execute the following commands:
 
 ```bash
 cd frontend
-npm install   # Cài đặt các thư viện phụ thuộc
-npm start     # Chạy ứng dụng React
-
+npm install   # Install dependencies
+npm start     # Start the React application
 ```
 
-> Ứng dụng sẽ tự động mở tại: `http://localhost:3000`
+> The app will automatically open at: `http://localhost:3000`
 
 ---
 
 **Happy Coding!** 🚀
-
